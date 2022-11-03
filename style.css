@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./bg-img.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.login-container, .signup-container{
+  height: 540px;
+  width: 320px;
+  background-color: #00000079;
+  /* firefox does not supports blur effect */
+  backdrop-filter: blur(2em);
+  -webkit-backdrop-filter: blur(2em);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 3px;
+  margin: 5px;
+  padding: 2px;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0
+}
+
+.form-input{
+  /* remove default styling */
+  outline: none;
+  border: none;
+
+  /* custom styling */
+  height: 38px;
+  width: 280px;
+  border: .8px #cccccc solid;
+  background-color: #ffffff;
+  border-radius: 3px;
+  margin: 3px 0;
+  color: #333333;
+}
+
+.form-input:focus{
+  border-left: 2px solid #41a0ff;
+}
+
+.input-text, .input-email, .input-name, .input-password{
+  padding: 0 4px;
+}
+
+.input-btn{
+  background-color: #41a0ff;
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  margin: 5px 0;
+  color: #41a0ff;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+h1{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+p{
+  margin: 5px 0;
+  color: #f5f6f7;
+}
